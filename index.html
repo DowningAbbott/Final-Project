@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+pre {
+  background-color: #eee;
+  border: 1px solid #999;
+  width: 335px;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>this the index</h1>
+
+<nav>
+      <a href="./index.html">Home</a>
+      <a href="./fppage2.html">page2</a>
+      <a href="./fppage3.html">page3</a>
+      <a href="./fppage4.html">page4</a>
+	  <a href="./fppage5.html">page5</a>
+				  
+    </nav>
+<p>This is a paragraph.</p>
+<p><strong>This text is bold.</strong></p>
+<p><i>This text is fancy.</i></p>
+<p>this is some python code</p>
+<pre>
+import numpy as np
+def main():
+    number_file = open("numbers.txt", "r")
+    count = 0
+    total = 0
+	
+    
+    for line in number_file:
+        count += 1	
+        number = int(line)
+        total += number
+    average = total / count
+	
+    
+    print(("Sum:"),(total))
+    print(("Count:"),(count))
+    print(("Average:"),(average))
+    x = np.loadtxt("numbers.txt")
+    print("Max:", np.amax(x))
+    print("Min:", np.amin(x)) 
+    Range = np.amax(x) - np.amin(x) 
+    print("Range:", Range)        
+	
+    
+main()
+
+</pre>
+
+
+
+
+</body>
+</html>
